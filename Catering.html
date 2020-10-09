@@ -1,0 +1,430 @@
+<html>
+    <head>
+        <title>Restaurent</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Font-Awesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #brand{
+                font-family:freestyle script;
+                font-size: 60px;
+                font-weight: bolder;
+                color: orangered;
+                padding-left: 40px;
+                padding-bottom: 10px;
+            }
+            #nav li{   
+                color: white;
+                font-size: 18px;
+                font-weight: 900;
+                font-family: Segoe print;
+                padding: 10px 0px;
+            }
+            .li:hover{
+                color: black;
+            }   
+
+            #banner{
+                background-image: url(pexels-kaboompics-com-6270.jpg);
+                background-attachment: fixed;
+                background-position: bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: auto;
+            }
+            #banner p{
+
+                color: white;
+                background-color: rgb(0,0,0,0.4);
+                border-radius: 50px;
+                font-size: 45px;
+                font-weight: 900;
+                font-family: gins sans ultra bold;
+                letter-spacing: 20px;
+                padding: 10px 0px;
+                margin: 150px 0px 100px 0px;
+                transition-duration: 1s;
+            }
+            #banner p:hover{
+                color: saddlebrown;
+            }
+
+            #catering1 p:nth-of-type(1){
+                font-size: 50px;
+                font-family: goudy old style;
+                color: black;
+                letter-spacing: 2px;
+                word-spacing: 2px;
+            }
+            #catering1 p:nth-of-type(2){
+                font-size: 20px;
+                font-family: bookman old style;
+                color: black;
+            }
+            #catering1 a{
+                font-size: 16px;
+                letter-spacing: 2px;
+                padding: 10px 20px;
+                font-family: goudy old style;
+                background-color: saddlebrown;
+                color: white;
+                border-radius: 20px;
+                transition-duration: 1s;
+            }
+            #catering1 a:hover{
+                text-decoration: none;
+                background-color: white;
+                color: saddlebrown;
+                border: 2px solid saddlebrown;
+            }
+
+            #full-service p:nth-of-type(1){
+                font-size: 40px;
+                font-family: goudy old style;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: 900;
+            }
+            #full-service p{
+                font-size: 20px;
+                font-family: bookman old style;
+                color: black;
+            }
+            #full-service a{
+                font-size: 16px;
+                letter-spacing: 2px;
+                padding: 10px 20px;
+                font-family: goudy old style;
+                background-color: saddlebrown;
+                color: white;
+                border-radius: 20px;
+                transition-duration: 1s;
+            }
+            #full-service a:hover{
+                text-decoration: none;
+                background-color: white;
+                color: saddlebrown;
+                border: 2px solid saddlebrown;
+            }
+
+            #menuPrice p:nth-of-type(1){
+                font-size: 40px;
+                font-family: goudy old style;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: 900;
+            }
+            #menuPrice p{
+                font-size: 20px;
+                font-family: bookman old style;
+                color: black;
+            }
+            #menuPrice a{
+                font-size: 16px;
+                letter-spacing: 2px;
+                padding: 10px 20px;
+                font-family: goudy old style;
+                background-color: saddlebrown;
+                color: white;
+                border-radius: 20px;
+                transition-duration: 1s;
+            }
+            #menuPrice a:hover{
+                text-decoration: none;
+                background-color: white;
+                color: saddlebrown;
+                border: 2px solid saddlebrown;
+            }
+
+            #location p:nth-of-type(1){
+                font-size: 40px;
+                font-family: goudy old style;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: 900;
+            }
+            #location p{
+                font-size: 20px;
+                font-family: bookman old style;
+                color: black;
+            }
+            #location a{
+                font-size: 16px;
+                letter-spacing: 2px;
+                padding: 10px 20px;
+                font-family: goudy old style;
+                background-color: saddlebrown;
+                color: white;
+                border-radius: 20px;
+                transition-duration: 1s;
+            }
+            #location a:hover{
+                text-decoration: none;
+                background-color: white;
+                color: saddlebrown;
+                border: 2px solid saddlebrown;
+            }
+
+            #footer{
+                width: 99%;
+                background-color: black;
+                color: white;
+                padding: 0px 15px 0px 0px;
+                font-size: 20px;
+            }
+            #footer i{
+                margin-left: 30px;
+                padding-top: 15px;
+            }
+            #footer i:first-child{
+                padding-left: 10px;
+            }
+            #footer i:hover{
+                color: royalblue;
+                transition-duration: .5s;
+            }
+            #footer p{
+                padding: 15px 0px 0px 10px;
+                font-size: 14px;
+                font-family: goudy old style;
+                letter-spacing: 2px;
+            }
+            .footerP:hover{
+                color: green;
+                transition-duration: .5s;
+            }
+            #footer:hover{
+                border-top-left-radius: 40px;
+                border-top-right-radius:40px;
+            }
+
+            #copy{
+                width: 99%;
+                background-color: white;
+                color: black;
+                font-size: 14px;
+                font-family: goudy old style;
+                letter-spacing: 2px;
+                margin-bottom: 50px;
+            }
+            #copy p:nth-of-type(2){
+                transition: transform .8s;
+            }
+            #copy p:nth-of-type(2):hover{
+                font-weight: bolder;
+                transform: scale(1.2);
+                color: orangered;
+            }
+            #copy:hover{
+                border-bottom-right-radius: 40px;
+                border-bottom-left-radius: 40px;
+            }
+
+
+            #add p{
+                color: white;
+                font-size: 16px;
+                font-family: goudy old style;
+                padding: 15px 0px 0px 0px;
+                letter-spacing: 2px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-right: 30px;">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Restaurant.html" style="padding: 25px 0px"><span id="brand">1947 Restaurent</span></a>
+                </div>
+                <div id="nav">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Restaurant.html"><span class="li">Home</span></a></li>
+                            <li><a href="AboutUs.html"><span class="li">About Us</span></a></li>
+                            <li><a href="Menus.html"><span class="li">Menu</span></a></li>
+                            <li class="active"><a href=""><span class="li">Catering</span></a></li>
+                            <li><a href="Reservation.html"><span class="li">Reservation</span></a></li>
+                            <li><a href="Contact.html"><span class="li">Contact Us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <br><br><br><br>
+
+        <div class="row">
+            <div class="container-fluid" id="banner">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <center><p>CATERING</p></center>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row" id="catering1">
+            <div class="container-fluid">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <center><p>Our good catering for your next special event</p>
+                        <p>Need quick pick-up, large delivery, or full-service catering? We offers the best catering services for any occasion from weddings, parties, office luncheons, & more.</p></center>
+                    <br>
+                    <center>
+                        <a href="#full-service">FULL SERVICE CATERING</a><br>
+                        <br><br>
+                        <a href="#menuPrice">MENUS & PRICING</a><br>
+                        <br><br>
+                        <a href="#location">CATERING LOCATION</a>
+                    </center>
+                    <hr style="background-color: saddlebrown;height: 1px">
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+            <div class="container-fluid">
+
+                <div class="col-lg-12">
+                    <img src="pexels-rene-asmussen-3217157.jpg" alt="" width="100%" height="">
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+
+        <div class="row" id="full-service">
+            <div class="container">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <center><p>Full-Service Catering Experience</p>
+                        <p>From weddings, receptions, and graduation parties to corporate events, school functions, and sporting events, our full-service catering can do it all, big and small.</p>
+                        <p>Our full-service catering offers the best catering experience anywhere with delicious food, expert event management, and friendly on-site staff. We’ll work with you every step of the way, and through every detail, to make sure your event goes off without a hitch.</p>
+                        <p>Contact our catering expert online or give us a call today at 900-000-0001 so we can learn more about your special event and provide our premier catering experience that your guests are sure to love</p>
+                    </center>
+                    <br>
+                    <center><a href="Contact.html">LEARN MORE</a></center>
+                    <hr style="background-color: saddlebrown;height: 1px">
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="container-fluid">
+
+                <div class="col-lg-12">
+                    <img src="omar-gattis-kR6SCDE_Bc4-unsplash.jpg" alt="" width="100%" height="">
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row" id="menuPrice">
+            <div class="container">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <center>
+                        <p>Menus & Pricing</p>
+                        <p>Order the South’s Best dish for your next gathering or special event! Whether you’re ordering for home or the office, our catering is sure to please all your guests.</p>
+                        <p>Our catering offers a variety of catering menus and packages for pickup and delivery, making ordering for your event fast and easy. You can pick up your order from your local house packaged up and ready to go, or have us bring it to you.</p>
+                        <p>Our chef's packages include all of our award-winning slow-smoked vegies as well as fresh homestyle sides and decadent hand-made desserts. Each package is priced per person, so you can make sure there’s enough for everyone.</p>
+                        <p>If you’re looking for a custom package to meet your needs, we also offer an a la carte catering delivery menu as well.</p>
+                        <p>Have questions? Our expert catering team would be happy to help with any questions. You can contact us online or over the phone by calling 900-000-0001.</p>
+                    </center>
+                    <br>
+                    <center><a href="Menus.html">SEE MENU</a></center>
+                    <hr style="background-color: saddlebrown;height: 1px">
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="container-fluid">
+
+                <div class="col-lg-12">
+                    <img src="pexels-fu-zhichao-587741.jpg" alt="" width="100%" height="">
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row" id="location">
+            <div class="container">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <center>
+                        <p>Catering Locations</p>
+                        <p>Catering offers it’s premier catering services to dozens of communities across India, from Kashmir to KanyaKumari and Gujrat to Assam, and everything in between. Whether you’re interested in a quick pick-up or full-service catering, We provide the best catering services anywhere in the state of India.</p>
+                        <p>You can even host your next event at one of our Location! Contact us online today or call us now so we can chat about reserving a private dining space for your next event.</p>
+                    </center>
+                    <br>
+                    <center><a href="Contact.html">CONTACT US</a></center>
+                    <hr style="background-color: saddlebrown;height: 1px">
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+        <br><br>
+        <center>
+            <div class="row" id="footer">
+                <div class="container-fluid">
+                    <div class="col-lg-3">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <p><span class="footerP">PRIVACY POLICY</span> &nbsp; <span class="footerP">CONTACT US</span> &nbsp; <span class="footerP">EMAIL US</span></p>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="container-fluid" id="copy">
+                <p style="padding-top: 10px;"><i class="fa fa-copyright"></i> COPYRIGHT 2020 &nbsp; &nbsp; &nbsp; &nbsp; INTERNATIONAL HOSPITALITY INVESTMENTS &nbsp; &nbsp; &nbsp; &nbsp; DUMMY WEBSITE</p>
+                <p>DESIGNED BY <span>ANUPAM</span></p>
+            </div>
+        </center>
+        <br>
+
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container" id="add">
+                <center><p>12/30, Street no. 7, Town Hall Center, Bengaluru, Karnataka, India</p></center>
+            </div>
+        </nav>
+
+    </body>
+</html>
