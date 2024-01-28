@@ -1,295 +1,396 @@
 <html>
-    <head>
-        <title>Restaurent</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <title>Restaurent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="./assets/restaurant.png"
+      type="image/x-icon"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-        <!-- Font-Awesome Link-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font-Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-        <style>
-            *{
-                box-sizing: border-box;
-            }   
-            #brand{
-                font-family:freestyle script;
-                font-size: 60px;
-                font-weight: bolder;
-                color: orangered;
-                padding-left: 40px;
-                padding-bottom: 10px;
-            }
-            #nav li{   
-                color: white;
-                font-size: 18px;
-                font-weight: 900;
-                font-family: Segoe print;
-                padding: 10px 0px;
-            }
-            .li:hover{
-                color: black;
-            }   
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #brand {
+        font-family: freestyle script;
+        font-size: 60px;
+        font-weight: bolder;
+        color: orangered;
+        padding-left: 40px;
+        padding-bottom: 10px;
+      }
+      #nav li {
+        color: white;
+        font-size: 18px;
+        font-weight: 900;
+        font-family: Segoe print;
+        padding: 10px 0px;
+      }
+      .li:hover {
+        color: black;
+      }
 
-            #h3{
-                font-family: french script mt;
-                font-size: 50px;
-                color: darkorange;
-                font-weight: bolder;
-            }
-            #welcome p:nth-of-type(1){
-                font-size: 50px;
-                font-family: Goudy old style;
-                color: black;
-                padding: 0px 40px; 
-            }
-            #welcome p{
-                font-size: 20px;
-                font-family: bookman old style;
-                padding: 0px 20px;
-            }
-            .gal{
-                padding-top: 50px;
-                transition: transform 1s;
-            }
-            .gal:hover{
-                transform: scale(1.2);
-            }
+      #h3 {
+        font-family: french script mt;
+        font-size: 50px;
+        color: darkorange;
+        font-weight: bolder;
+      }
+      #welcome p:nth-of-type(1) {
+        font-size: 50px;
+        font-family: Goudy old style;
+        color: black;
+        padding: 0px 40px;
+      }
+      #welcome p {
+        font-size: 20px;
+        font-family: bookman old style;
+        padding: 0px 20px;
+      }
+      .gal {
+        padding-top: 50px;
+        transition: transform 1s;
+      }
+      .gal:hover {
+        transform: scale(1.2);
+      }
 
-            #m2 h2{
-                font-family: forte;
-                font-size: 40px;
-                color: green;
-            }
-            #m2 h1{
-                font-family: goudy old style;
-            }
-            #m2 p{
-                padding-left: 50px;
-                padding-right: 50px;
-                font-size: 20px;
-                font-family: bookman old style;
-            }
+      #m2 h2 {
+        font-family: forte;
+        font-size: 40px;
+        color: green;
+      }
+      #m2 h1 {
+        font-family: goudy old style;
+      }
+      #m2 p {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+        font-family: bookman old style;
+      }
 
+      #footer {
+        width: 99%;
+        background-color: black;
+        color: white;
+        padding: 0px 15px 0px 0px;
+        font-size: 20px;
+      }
+      #footer i {
+        margin-left: 30px;
+        padding-top: 15px;
+      }
+      #footer i:first-child {
+        padding-left: 10px;
+      }
+      #footer i:hover {
+        color: royalblue;
+        transition-duration: 0.5s;
+      }
+      #footer p {
+        padding: 15px 0px 0px 10px;
+        font-size: 14px;
+        font-family: goudy old style;
+        letter-spacing: 2px;
+      }
+      .footerP:hover {
+        color: green;
+        transition-duration: 0.5s;
+      }
+      #footer:hover {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+      }
 
-            #footer{
-                width: 99%;
-                background-color: black;
-                color: white;
-                padding: 0px 15px 0px 0px;
-                font-size: 20px;
-            }
-            #footer i{
-                margin-left: 30px;
-                padding-top: 15px;
-            }
-            #footer i:first-child{
-                padding-left: 10px;
-            }
-            #footer i:hover{
-                color: royalblue;
-                transition-duration: .5s;
-            }
-            #footer p{
-                padding: 15px 0px 0px 10px;
-                font-size: 14px;
-                font-family: goudy old style;
-                letter-spacing: 2px;
-            }
-            .footerP:hover{
-                color: green;
-                transition-duration: .5s;
-            }
-            #footer:hover{
-                border-top-left-radius: 40px;
-                border-top-right-radius:40px;
-            }
+      #copy {
+        width: 99%;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        font-family: goudy old style;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+      }
+      #copy p:nth-of-type(2) {
+        transition: transform 0.8s;
+      }
+      #copy p:nth-of-type(2):hover {
+        font-weight: bolder;
+        transform: scale(1.2);
+        color: orangered;
+        /*                transition-duration: 1s;*/
+      }
 
-            #copy{
-                width: 99%;
-                background-color: white;
-                color: black;
-                font-size: 14px;
-                font-family: goudy old style;
-                letter-spacing: 2px;
-                margin-bottom: 50px;
-            }
-            #copy p:nth-of-type(2){
-                transition: transform .8s;
-            }
-            #copy p:nth-of-type(2):hover{
-                font-weight: bolder;
-                transform: scale(1.2);
-                color: orangered;
-                /*                transition-duration: 1s;*/
-            }
+      #copy:hover {
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+      }
 
-            #copy:hover{
-                border-bottom-right-radius: 40px;
-                border-bottom-left-radius: 40px;
-            }
+      #add p {
+        color: white;
+        font-size: 16px;
+        font-family: goudy old style;
+        padding: 15px 0px 0px 0px;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
 
-
-            #add p{
-                color: white;
-                font-size: 16px;
-                font-family: goudy old style;
-                padding: 15px 0px 0px 0px;
-                letter-spacing: 2px;
-            }
-
-        </style>
-    </head>
-
-    <body>
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-right: 30px;">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="Restaurant.html" style="padding: 25px 0px"><span id="brand">1947 Restaurent</span></a>
-                </div>
-                <div id="nav">
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-
-                            <li><a href="Restaurant.html"><span class="li">Home</span></a></li>
-                            <li class="active"><a href=""><span class="li">About Us</span></a></li>
-                            <li><a href="Menus.html"><span class="li">Menu</span></a></li>
-                            <li><a href="Catering.html"><span class="li">Catering</span></a></li>
-                            <li><a href="Reservation.html"><span class="li">Reservation</span></a></li>
-                            <li><a href="Contact.html"><span class="li">Contact Us</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <br><br><br><br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-
-
-            </ol>
-
-            <div class="carousel-inner">
-                <div class="item active">
-                    <center><img src="brooke-lark-M4E7X3z80PQ-unsplash_new.jpg" alt="" height="auto" width="95%"></center>
-                    <div class="carousel-caption">
-
-                    </div>
-                </div>
-                <div class="item">
-                    <center><img src="paula-vermeulen-URjZkhqsuBk-unsplash_new.jpg" alt="" height="auto" width="95%"></center>
-                </div>
-
-            </div>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+            style="margin-right: 30px"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            class="navbar-brand"
+            href="Restaurant.html"
+            style="padding: 25px 0px"
+            ><span id="brand">1947 Restaurent</span></a
+          >
         </div>
-        <br><br>
-
-        <center><h3 id="h3">Welcome to 1947 Restaurent</h3></center>
-
-        <div class="row">
-            <div class="col-lg-1">
-
-            </div>
-            <div class="col-lg-5"> 
-
-                <div id="m2"><center>
-
-                    <h2>Our Story</h2>
-                    <h1>PURE VEGETARIAN</h1>
-                    <h1>PURE BLISS!</h1>
-                    <p>The Perfect Fine Dining Vegetarian Restaurant Great vegetarian food. Awesome ambiance. Tasteful, elegant decor. Wide range of offerings. The perfect restaurant for buffet, a-la-carte meals, executive meals and lots of other attractive restaurant offers. 1947 brings alive the generosity and hospitality of India's heritage.
-                        So, give it a try, Inspired by the Freedom struggle, our chain of restaurant brings to you the best in vegetarian cuisine.</p>
-                    </center></div>
-            </div>
-            <div class="col-lg-6">
-                <br><br><br>
-                <center><img src="pexels-ansel-lee-3499599.jpg" alt="" width="90%" height="auto" style="border-radius: 30px;border: 1px solid red"></center>
-            </div>
-
+        <div id="nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="Restaurant.html"><span class="li">Home</span></a>
+              </li>
+              <li class="active">
+                <a href=""><span class="li">About Us</span></a>
+              </li>
+              <li>
+                <a href="Menus.html"><span class="li">Menu</span></a>
+              </li>
+              <li>
+                <a href="Catering.html"><span class="li">Catering</span></a>
+              </li>
+              <li>
+                <a href="Reservation.html"
+                  ><span class="li">Reservation</span></a
+                >
+              </li>
+              <li>
+                <a href="Contact.html"><span class="li">Contact Us</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </nav>
 
-        <div class="row" id="welcome">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <center>
+    <br /><br /><br /><br />
+    <div
+      id="myCarousel"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="4000"
+    >
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
 
-                    <p>We are a modern Italian restaurent in the center of the city</p>
-                    <p>Wood fired Neapolitan pizzas prepared with the purest respect for traditions, fresh handmade pasta (do not miss our pasta with the truffles) and over a hundred different wines from the most renowned winemakers.</p>
-                    <p>Whether you are a foodie and wine connoisseur or simply someone in search of a great location for a family dinner, we welcome you!</p>
-                </center>               
-            </div>
-            <div class="col-lg-2"></div>
+      <div class="carousel-inner">
+        <div class="item active">
+          <center>
+            <img
+              src="./assets/brooke-lark-M4E7X3z80PQ-unsplash_new.jpg"
+              alt=""
+              height="auto"
+              width="95%"
+            />
+          </center>
+          <div class="carousel-caption"></div>
         </div>
-
-        <div class="row">
-            <div class="container">
-                <div class="col-lg-3 gal">
-                    <center><img src="pexels-anthony-leong-2092906.jpg" alt="" width="230px" height="auto"></center>
-                </div>
-
-                <div class="col-lg-3 gal">
-                    <center><img src="pexels-julie-aagaard-2097090.jpg" alt="" width="230px" height="auto"></center>
-                </div>
-
-                <div class="col-lg-3 gal">
-                    <center><img src="pexels-snapwire-286283.jpg" alt="" width="230px" height="auto"></center>
-                </div>
-
-                <div class="col-lg-3 gal">
-                    <center><img src="pexels-valeria-boltneva-1893556.jpg" alt="" width="230px" height="305px"></center>
-                </div>
-            </div>
+        <div class="item">
+          <center>
+            <img
+              src="./assets/paula-vermeulen-URjZkhqsuBk-unsplash_new.jpg"
+              alt=""
+              height="auto"
+              width="95%"
+            />
+          </center>
         </div>
-        <br><br>
+      </div>
+    </div>
+    <br /><br />
 
+    <center><h3 id="h3">Welcome to 1947 Restaurent</h3></center>
 
-        <br><br>
-
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <div id="m2">
+          <center>
+            <h2>Our Story</h2>
+            <h1>PURE VEGETARIAN</h1>
+            <h1>PURE BLISS!</h1>
+            <p>
+              The Perfect Fine Dining Vegetarian Restaurant Great vegetarian
+              food. Awesome ambiance. Tasteful, elegant decor. Wide range of
+              offerings. The perfect restaurant for buffet, a-la-carte meals,
+              executive meals and lots of other attractive restaurant offers.
+              1947 brings alive the generosity and hospitality of India's
+              heritage. So, give it a try, Inspired by the Freedom struggle, our
+              chain of restaurant brings to you the best in vegetarian cuisine.
+            </p>
+          </center>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <br /><br /><br />
         <center>
-            <div class="row" id="footer">
-                <div class="container-fluid">
-                    <div class="col-lg-3">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                    </div>
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4">
-                        <p><span class="footerP">PRIVACY POLICY</span> &nbsp; <span class="footerP">CONTACT US</span> &nbsp; <span class="footerP">EMAIL US</span></p>
-                    </div>
-                </div>
-            </div>
+          <img
+            src="./assets/pexels-ansel-lee-3499599.jpg"
+            alt=""
+            width="90%"
+            height="auto"
+            style="border-radius: 30px; border: 1px solid red"
+          />
         </center>
+      </div>
+    </div>
 
+    <div class="row" id="welcome">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
         <center>
-            <div class="container-fluid" id="copy">
-                <p style="padding-top: 10px;"><i class="fa fa-copyright"></i> COPYRIGHT 2020 &nbsp; &nbsp; &nbsp; &nbsp; INTERNATIONAL HOSPITALITY INVESTMENTS &nbsp; &nbsp; &nbsp; &nbsp; DUMMY WEBSITE</p>
-                <p>DESIGNED BY <span>ANUPAM</span></p>
-            </div>
+          <p>We are a modern Italian restaurent in the center of the city</p>
+          <p>
+            Wood fired Neapolitan pizzas prepared with the purest respect for
+            traditions, fresh handmade pasta (do not miss our pasta with the
+            truffles) and over a hundred different wines from the most renowned
+            winemakers.
+          </p>
+          <p>
+            Whether you are a foodie and wine connoisseur or simply someone in
+            search of a great location for a family dinner, we welcome you!
+          </p>
         </center>
-        <br>
-        <nav class="navbar navbar-inverse navbar-fixed-bottom">
-            <div class="container" id="add">
-                <center><p>12/30, Street no. 7, Town Hall Center, Bengaluru, Karnataka, India</p></center>
-            </div>
-        </nav>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
 
-    </body>
+    <div class="row">
+      <div class="container">
+        <div class="col-lg-3 gal">
+          <center>
+            <img
+              src="./assets/pexels-anthony-leong-2092906.jpg"
+              alt=""
+              width="230px"
+              height="auto"
+            />
+          </center>
+        </div>
+
+        <div class="col-lg-3 gal">
+          <center>
+            <img
+              src="./assets/pexels-julie-aagaard-2097090.jpg"
+              alt=""
+              width="230px"
+              height="auto"
+            />
+          </center>
+        </div>
+
+        <div class="col-lg-3 gal">
+          <center>
+            <img
+              src="./assets/pexels-snapwire-286283.jpg"
+              alt=""
+              width="230px"
+              height="auto"
+            />
+          </center>
+        </div>
+
+        <div class="col-lg-3 gal">
+          <center>
+            <img
+              src="./assets/pexels-valeria-boltneva-1893556.jpg"
+              alt=""
+              width="230px"
+              height="305px"
+            />
+          </center>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <br /><br />
+
+    <center>
+      <div class="row" id="footer">
+        <div class="container-fluid">
+          <div class="col-lg-3">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="col-lg-3"></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <p>
+              <span class="footerP">PRIVACY POLICY</span> &nbsp;
+              <span class="footerP">CONTACT US</span> &nbsp;
+              <span class="footerP">EMAIL US</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <center>
+      <div class="container-fluid" id="copy">
+        <p style="padding-top: 10px">
+          <i class="fa fa-copyright"></i> COPYRIGHT 2020 &nbsp; &nbsp; &nbsp;
+          &nbsp; INTERNATIONAL HOSPITALITY INVESTMENTS &nbsp; &nbsp; &nbsp;
+          &nbsp; DUMMY WEBSITE
+        </p>
+        <p>DESIGNED BY <span>ANUPAM</span></p>
+      </div>
+    </center>
+    <br />
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container" id="add">
+        <center>
+          <p>
+            12/30, Street no. 7, Town Hall Center, Bengaluru, Karnataka, India
+          </p>
+        </center>
+      </div>
+    </nav>
+  </body>
 </html>

@@ -1,53 +1,63 @@
 <html>
-    <head>
-        <title>Restaurent</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <title>Restaurent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="./assets/restaurant.png"
+      type="image/x-icon"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-        <!-- Font-Awesome Link-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font-Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-        <style>
-            *{
-                box-sizing: border-box;
-            }
-            #brand{
-                font-family:freestyle script;
-                font-size: 60px;
-                font-weight: bolder;
-                color: orangered;
-                padding-left: 40px;
-                padding-bottom: 10px;
-            }
-            #nav li{   
-                color: white;
-                font-size: 18px;
-                font-weight: 900;
-                font-family: Segoe print;
-                padding: 10px 0px;
-            }
-            .li:hover{
-                color: black;
-            }  
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #brand {
+        font-family: freestyle script;
+        font-size: 60px;
+        font-weight: bolder;
+        color: orangered;
+        padding-left: 40px;
+        padding-bottom: 10px;
+      }
+      #nav li {
+        color: white;
+        font-size: 18px;
+        font-weight: 900;
+        font-family: Segoe print;
+        padding: 10px 0px;
+      }
+      .li:hover {
+        color: black;
+      }
 
-
-            #banner{
-                background-image: url(pexels-cynthia-ortega-espinosa-5037372.jpg);
-                background-position: center;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 100%;
-                height: 400px;
-            }
-            /*
+      #banner {
+        background-image: url(./assets/pexels-cynthia-ortega-espinosa-5037372.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+      }
+      /*
             #banner p{
             color: red;
             background-color: rgb(0,0,0,0.4);
@@ -62,335 +72,388 @@
             }
             */
 
-            #reservation h1{
-                font-family: bookman old style;
-            }
-            #reservation a{
-                font-size: 16px;
-                letter-spacing: 2px;
-                padding: 10px 20px;
-                font-family: goudy old style;
-                background-color: green;
-                color: white;
-                border-radius: 20px;
-                transition-duration: 1s;
-            }
-            #reservation a:hover{
-                text-decoration: none;
-                background-color: white;
-                color: green;
-                border: 2px solid green;
-            }
-            #byPhone h3{
-                font-family: baskerville old face;
-                font-weight: bolder;
-            }
-            #byPhone p{
-                font-family: goudy old style;
-                font-size: 20px;
-            }
+      #reservation h1 {
+        font-family: bookman old style;
+      }
+      #reservation a {
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-family: goudy old style;
+        background-color: green;
+        color: white;
+        border-radius: 20px;
+        transition-duration: 1s;
+      }
+      #reservation a:hover {
+        text-decoration: none;
+        background-color: white;
+        color: green;
+        border: 2px solid green;
+      }
+      #byPhone h3 {
+        font-family: baskerville old face;
+        font-weight: bolder;
+      }
+      #byPhone p {
+        font-family: goudy old style;
+        font-size: 20px;
+      }
 
-            #booking{
-                font-family: bookman old style;
-            }
-            #form input{
-                width: 70%;
-                height: 50px;
-                border: none;
-                border-bottom: 1px solid black;
-                padding: 10px 30px ;
-                font-size: 18px;
-                background-color: rgb(0,0,0,0.1);
-                color: black;
-            }
-            #form select{
-                width: 70%;
-                height: 50px;
-                border: none;
-                border-bottom: 1px solid black;
-                padding: 10px 30px ;
-                font-size: 18px;
-                background-color: rgb(0,0,0,0.1);
-                color: black;
-            }
-            #form label{
-                font-size: 20px;
-                color: darkorange;
-            }
-            #submit{
-                color: white;
-                font-size: 20px;
-                font-family: goudy old style;
-                background-color: green;
-                border: 2px solid white;
-                font-weight: 900;
-                width: 150px;
-                border-radius: 10px;
-                padding: 10px;
-                transition: 1s;
-            }
-            #submit:hover{
-                background-color: white;
-                color: green;
-                border: 2px solid green;
-            }
+      #booking {
+        font-family: bookman old style;
+      }
+      #form input {
+        width: 70%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: rgb(0, 0, 0, 0.1);
+        color: black;
+      }
+      #form select {
+        width: 70%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: rgb(0, 0, 0, 0.1);
+        color: black;
+      }
+      #form label {
+        font-size: 20px;
+        color: darkorange;
+      }
+      #submit {
+        color: white;
+        font-size: 20px;
+        font-family: goudy old style;
+        background-color: green;
+        border: 2px solid white;
+        font-weight: 900;
+        width: 150px;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 1s;
+      }
+      #submit:hover {
+        background-color: white;
+        color: green;
+        border: 2px solid green;
+      }
 
-            #footer{
-                width: 99%;
-                background-color: black;
-                color: white;
-                padding: 0px 15px 0px 0px;
-                font-size: 20px;
-            }
-            #footer i{
-                margin-left: 30px;
-                padding-top: 15px;
-            }
-            #footer i:first-child{
-                padding-left: 10px;
-            }
-            #footer i:hover{
-                color: royalblue;
-                transition-duration: .5s;
-            }
-            #footer p{
-                padding: 15px 0px 0px 10px;
-                font-size: 14px;
-                font-family: goudy old style;
-                letter-spacing: 2px;
-            }
-            .footerP:hover{
-                color: green;
-                transition-duration: .5s;
-            }
-            #footer:hover{
-                border-top-left-radius: 40px;
-                border-top-right-radius:40px;
-            }
+      #footer {
+        width: 99%;
+        background-color: black;
+        color: white;
+        padding: 0px 15px 0px 0px;
+        font-size: 20px;
+      }
+      #footer i {
+        margin-left: 30px;
+        padding-top: 15px;
+      }
+      #footer i:first-child {
+        padding-left: 10px;
+      }
+      #footer i:hover {
+        color: royalblue;
+        transition-duration: 0.5s;
+      }
+      #footer p {
+        padding: 15px 0px 0px 10px;
+        font-size: 14px;
+        font-family: goudy old style;
+        letter-spacing: 2px;
+      }
+      .footerP:hover {
+        color: green;
+        transition-duration: 0.5s;
+      }
+      #footer:hover {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+      }
 
-            #copy{
-                width: 99%;
-                background-color: white;
-                color: black;
-                font-size: 14px;
-                font-family: goudy old style;
-                letter-spacing: 2px;
-                margin-bottom: 50px;
-            }
-            #copy p:nth-of-type(2){
-                transition: transform .8s;
-            }
-            #copy p:nth-of-type(2):hover{
-                font-weight: bolder;
-                transform: scale(1.2);
-                color: orangered;
-            }
-            #copy:hover{
-                border-bottom-right-radius: 40px;
-                border-bottom-left-radius: 40px;
-            }
+      #copy {
+        width: 99%;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        font-family: goudy old style;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+      }
+      #copy p:nth-of-type(2) {
+        transition: transform 0.8s;
+      }
+      #copy p:nth-of-type(2):hover {
+        font-weight: bolder;
+        transform: scale(1.2);
+        color: orangered;
+      }
+      #copy:hover {
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+      }
 
-            
-            #add p{
-                color: white;
-                font-size: 16px;
-                font-family: goudy old style;
-                padding: 15px 0px 0px 0px;
-                letter-spacing: 2px;
-            }
+      #add p {
+        color: white;
+        font-size: 16px;
+        font-family: goudy old style;
+        padding: 15px 0px 0px 0px;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+            style="margin-right: 30px"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            class="navbar-brand"
+            href="Restaurant.html"
+            style="padding: 25px 0px"
+            ><span id="brand">1947 Restaurent</span></a
+          >
+        </div>
+        <div id="nav">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="Restaurant.html"><span class="li">Home</span></a>
+              </li>
+              <li>
+                <a href="AboutUs.html"><span class="li">About Us</span></a>
+              </li>
+              <li>
+                <a href="Menus.html"><span class="li">Menu</span></a>
+              </li>
+              <li>
+                <a href="Catering.html"><span class="li">Catering</span></a>
+              </li>
+              <li class="active">
+                <a href=""><span class="li">Reservation</span></a>
+              </li>
+              <li>
+                <a href="Contact.html"><span class="li">Contact Us</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        </style>
-    </head>
-    <body>
+    <br /><br /><br /><br />
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-right: 30px;">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="Restaurant.html" style="padding: 25px 0px"><span id="brand">1947 Restaurent</span></a>
-                </div>
-                <div id="nav">
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="Restaurant.html"><span class="li">Home</span></a></li>
-                            <li><a href="AboutUs.html"><span class="li">About Us</span></a></li>
-                            <li><a href="Menus.html"><span class="li">Menu</span></a></li>
-                            <li><a href="Catering.html"><span class="li">Catering</span></a></li>
-                            <li class="active"><a href=""><span class="li">Reservation</span></a></li>
-                            <li><a href="Contact.html"><span class="li">Contact Us</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <center>
+      <div class="row">
+        <div class="container-fluid" id="banner"></div>
+      </div>
+    </center>
+    <br />
 
-        <br><br><br><br>
+    <div class="row" id="reservation">
+      <div class="container">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <center><h1>MAKE A RESERVATION</h1></center>
+          <br /><br />
+          <center><a href="#booking">FIND A TABLE</a></center>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+    <br />
 
+    <div class="row" id="byPhone">
+      <div class="container">
+        <div class="col-lg-6">
+          <h3>BY PHONE</h3>
+          <p>Prefer to make your reservation via phone?</p>
+          <p>Call (91) 90000-00001 between 10am and noon.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3>SPECIAL EVENTS & PRIVATE PARTIES</h3>
+          <p>
+            Catering and Events are opportunities for us to work more closely
+            with our guests, occasions for us to share our dedication to
+            celebration in exciting new ways.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="row">
+      <div class="container">
+        <img
+          src="./assets/grant-durr-PneZqpx1F80-unsplash_new.jpg"
+          alt=""
+          width="100%"
+          height="auto"
+        />
+      </div>
+    </div>
+    <br /><br />
+
+    <center>
+      <h2 id="booking"><u>Booking Details</u></h2>
+    </center>
+    <br /><br />
+    <div class="row" id="form">
+      <div class="container">
+        <div class="col-lg-6">
+          <center><label for="">Full Name</label></center>
+          <center>
+            <input type="text" placeholder="Enter your Full Name" />
+          </center>
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <center><label for="">Your Age</label></center>
+          <center><input type="number" placeholder="Enter age" /></center>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="row" id="form">
+      <div class="container">
+        <div class="col-lg-6">
+          <center><label for="">Your Contact Number</label></center>
+          <center>
+            <input type="number" placeholder="Enter Contact Number" />
+          </center>
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <center><label for="">Total Seats to be Reserved</label></center>
+          <center>
+            <select name="seat" id="">
+              <option value="" selected>Select No. of Seats</option>
+              <option value="2">2 Seats</option>
+              <option value="3">3 Seats</option>
+              <option value="4">4 Seats</option>
+              <option value="6">6 Seats</option>
+              <option value="8">8 Seats</option>
+              <option value="10">10 Seats</option>
+            </select>
+          </center>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="form">
+      <div class="container">
+        <div class="col-lg-6">
+          <center><label for="">From Clock</label></center>
+          <center><input type="time" placeholder="From Time" /></center>
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <center><label for="">To Clock</label></center>
+          <center><input type="time" placeholder="To time" /></center>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="form">
+      <div class="container">
+        <div class="col-lg-6">
+          <center><label for="">On Date</label></center>
+          <center><input type="date" placeholder="Enter Date" /></center>
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <center><label for="">Reservation Purpose</label></center>
+          <center><input type="text" placeholder="Enter Purpose" /></center>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <center>
+            <input
+              type="submit"
+              onclick="book()"
+              value="Book Now"
+              id="submit"
+            />
+          </center>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+
+    <br /><br />
+    <center>
+      <div class="row" id="footer">
+        <div class="container-fluid">
+          <div class="col-lg-3">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="col-lg-3"></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <p>
+              <span class="footerP">PRIVACY POLICY</span> &nbsp;
+              <span class="footerP">CONTACT US</span> &nbsp;
+              <span class="footerP">EMAIL US</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <center>
+      <div class="container-fluid" id="copy">
+        <p style="padding-top: 10px">
+          <i class="fa fa-copyright"></i> COPYRIGHT 2020 &nbsp; &nbsp; &nbsp;
+          &nbsp; INTERNATIONAL HOSPITALITY INVESTMENTS &nbsp; &nbsp; &nbsp;
+          &nbsp; DUMMY WEBSITE
+        </p>
+        <p>DESIGNED BY <span>ANUPAM</span></p>
+      </div>
+    </center>
+    <br />
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container" id="add">
         <center>
-            <div class="row">
-                <div class="container-fluid" id="banner">
-                </div>
-            </div>
+          <p>
+            12/30, Street no. 7, Town Hall Center, Bengaluru, Karnataka, India
+          </p>
         </center>
-        <br>
+      </div>
+    </nav>
 
-        <div class="row" id="reservation">
-            <div class="container">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
-                    <center><h1>MAKE A RESERVATION</h1></center>
-                    <br><br>
-                    <center><a href="#booking">FIND A TABLE</a></center>
-                </div>
-                <div class="col-lg-3"></div>
-            </div>
-        </div>
-        <br>
-
-        <div class="row" id="byPhone">
-            <div class="container">
-                <div class="col-lg-6">
-                    <h3>BY PHONE</h3>
-                    <p>Prefer to make your reservation via phone?</p>
-                    <p>Call (91) 90000-00001 between 10am and noon.</p>
-                </div>
-                <div class="col-lg-6">
-                    <h3>SPECIAL EVENTS & PRIVATE PARTIES</h3>
-                    <p>Catering and Events are opportunities for us to work more closely with our guests, occasions for us to share our dedication to celebration in exciting new ways.</p>
-                </div>
-            </div>
-        </div>
-        <br><br>
-
-        <div class="row">
-            <div class="container">
-                <img src="grant-durr-PneZqpx1F80-unsplash_new.jpg" alt="" width="100%" height="auto">
-            </div>
-        </div>
-        <br><br>
-
-        <center><h2 id="booking"><u>Booking Details</u></h2></center>
-        <br><br>       
-        <div class="row" id="form">
-            <div class="container">
-                <div class="col-lg-6">
-                    <center><label for="">Full Name</label></center>
-                    <center><input type="text" placeholder="Enter your Full Name"></center>
-                    <br>
-                </div>
-                <div class="col-lg-6">
-                    <center><label for="">Your Age</label></center>
-                    <center><input type="number" placeholder="Enter age"></center>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="form">
-            <div class="container">
-                <div class="col-lg-6">
-                    <center><label for="">Your Contact Number</label></center>
-                    <center><input type="number" placeholder="Enter Contact Number"></center>
-                    <br>
-                </div>
-                <div class="col-lg-6">
-                    <center><label for="">Total Seats to be Reserved</label></center>
-                    <center><select name="seat" id="">
-                        <option value="" selected>Select No. of Seats</option>
-                        <option value="2">2 Seats</option>
-                        <option value="3">3 Seats</option>
-                        <option value="4">4 Seats</option>
-                        <option value="6">6 Seats</option>
-                        <option value="8">8 Seats</option>
-                        <option value="10">10 Seats</option>
-                        </select></center>
-                    <br>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" id="form">
-            <div class="container">
-                <div class="col-lg-6">
-                    <center><label for="">From Clock</label></center>
-                    <center><input type="time" placeholder="From Time"></center>
-                    <br>
-                </div>
-                <div class="col-lg-6">
-                    <center><label for="">To Clock</label></center>
-                    <center><input type="time" placeholder="To time"></center>
-                    <br>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" id="form">
-            <div class="container">
-                <div class="col-lg-6">
-                    <center><label for="">On Date</label></center>
-                    <center><input type="date" placeholder="Enter Date"></center>
-                    <br>
-                </div>
-                <div class="col-lg-6">
-                    <center><label for="">Reservation Purpose</label></center>
-                    <center><input type="text" placeholder="Enter Purpose"></center>
-                    <br>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="container">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4">
-                    <center><input type="submit" onclick="book()" value="Book Now" id="submit"></center>
-                </div>
-                <div class="col-lg-4"></div>
-            </div>
-        </div>
-
-
-        <br><br>
-        <center>
-            <div class="row" id="footer">
-                <div class="container-fluid">
-                    <div class="col-lg-3">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                    </div>
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4">
-                        <p><span class="footerP">PRIVACY POLICY</span> &nbsp; <span class="footerP">CONTACT US</span> &nbsp; <span class="footerP">EMAIL US</span></p>
-                    </div>
-                </div>
-            </div>
-        </center>
-
-        <center>
-            <div class="container-fluid" id="copy">
-                <p style="padding-top: 10px;"><i class="fa fa-copyright"></i> COPYRIGHT 2020 &nbsp; &nbsp; &nbsp; &nbsp; INTERNATIONAL HOSPITALITY INVESTMENTS &nbsp; &nbsp; &nbsp; &nbsp; DUMMY WEBSITE</p>
-                <p>DESIGNED BY <span>ANUPAM</span></p>
-            </div>
-        </center>
-        <br>
-
-        <nav class="navbar navbar-inverse navbar-fixed-bottom">
-            <div class="container" id="add">
-                <center><p>12/30, Street no. 7, Town Hall Center, Bengaluru, Karnataka, India</p></center>
-            </div>
-        </nav>
-
-        <script>
-            function book(){
-                alert("Thank You for Booking with us.");
-                window.location="Restaurant.html"
-            }
-        </script>
-
-    </body>
+    <script>
+      function book() {
+        alert("Thank You for Booking with us.");
+        window.location = "Restaurant.html";
+      }
+    </script>
+  </body>
 </html>
